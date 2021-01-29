@@ -1,0 +1,58 @@
+.fl { float: left; }
+.fr { float: right; }
+/* 清除浮动 */
+.clearfix {
+  &:after {
+      clear: both;
+      content: '.';
+      display: block;
+      height: 0;
+      line-height: 0;
+      overflow: hidden;
+  }
+  *height: 1%;
+}
+
+/* 箭头朝上三角形：传入边框宽度，颜色 */
+.triangle-t(@width: 4px,@color: #000) {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-bottom: @width solid @color;
+  border-left: @width solid transparent;
+  border-right: @width solid transparent;
+}
+
+/* 箭头朝右三角形：传入边框宽度，颜色 */
+.triangle-r(@width: 4px,@color: #000) {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-width: @width 0 @width @width;
+  border-style: solid;
+  border-color: transparent @color transparent 
+}
+
+/* 箭头朝下三角形：传入边框宽度，颜色 */
+.triangle-b(@width: 4px,@color: #000) {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-top: @width solid @color;
+  border-left: @width solid transparent;
+  border-right: @width solid transparent;
+}
+
+/* 箭头朝左三角形：传入边框宽度，颜色 */
+.triangle-l(@width: 4px,@color: #000) {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-width: @width @width @width 0;
+  border-style: solid;
+  border-color: transparent @color transparent 
+}

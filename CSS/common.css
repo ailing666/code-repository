@@ -1,0 +1,22 @@
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/* 清除浮动 */
+.clearfix {
+  *height: 1%;
+}
+.clearfix:after {
+  clear: both;
+  content: '.';
+  display: block;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+/* 箭头朝上三角形：传入边框宽度，颜色 */
+/* 箭头朝右三角形：传入边框宽度，颜色 */
+/* 箭头朝下三角形：传入边框宽度，颜色 */
+/* 箭头朝左三角形：传入边框宽度，颜色 */

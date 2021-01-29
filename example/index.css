@@ -1,0 +1,64 @@
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/* 清除浮动 */
+.clearfix {
+  *height: 1%;
+}
+.clearfix:after {
+  clear: both;
+  content: '.';
+  display: block;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+/* 箭头朝上三角形：传入边框宽度，颜色 */
+/* 箭头朝右三角形：传入边框宽度，颜色 */
+/* 箭头朝下三角形：传入边框宽度，颜色 */
+/* 箭头朝左三角形：传入边框宽度，颜色 */
+.main {
+  width: 600px;
+  height: 100vh;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+.triangle-t {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-bottom: 5px solid #f34;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.triangle-r {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-width: 5px 0 5px 5px;
+  border-style: solid;
+  border-color: transparent #f34 transparent;
+}
+.triangle-b {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-top: 5px solid #f34;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+.triangle-l {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  vertical-align: middle;
+  border-width: 5px 5px 5px 0;
+  border-style: solid;
+  border-color: transparent #f34 transparent;
+}
